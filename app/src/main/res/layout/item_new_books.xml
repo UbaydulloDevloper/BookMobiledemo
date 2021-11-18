@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:padding="5dp"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/image_in_book"
+        android:layout_width="100dp"
+        android:layout_height="160dp"
+        android:background="@color/white"
+        android:src="@drawable/imagebook"
+        app:circularflow_defaultRadius="15dp"
+        app:layout_constraintCircleRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/radius" />
+
+    <TextView
+        android:id="@+id/authors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="Henry Ford"
+        android:textSize="12sp"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintLeft_toLeftOf="@id/image_in_book"
+        app:layout_constraintRight_toRightOf="@id/image_in_book"
+        app:layout_constraintTop_toBottomOf="@id/image_in_book" />
+
+    <TextView
+        android:id="@+id/name_book"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mening hayotim"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintLeft_toLeftOf="@id/image_in_book"
+        app:layout_constraintRight_toRightOf="@id/image_in_book"
+        app:layout_constraintTop_toBottomOf="@id/authors" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

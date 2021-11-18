@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="175dp"
+    android:layout_height="100dp"
+    android:layout_margin="10dp"
+    android:elevation="10dp"
+    app:cardCornerRadius="15dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="15sp">
+
+        <ImageView
+            android:id="@+id/image_katogor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_vector__2_"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/badiiy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Badiiy adabiyotlar"
+            android:textColor="@color/primary_color"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="@id/image_katogor"
+            app:layout_constraintRight_toRightOf="@id/image_katogor"
+            app:layout_constraintTop_toBottomOf="@id/image_katogor" />
+
+        <TextView
+            android:id="@+id/books_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="195 ta kitob"
+            android:textColor="@color/primary_color"
+            android:textStyle="italic"
+            app:layout_constraintLeft_toLeftOf="@id/image_katogor"
+            app:layout_constraintRight_toRightOf="@id/image_katogor"
+            app:layout_constraintTop_toBottomOf="@id/badiiy" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
